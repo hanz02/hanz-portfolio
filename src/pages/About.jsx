@@ -10,10 +10,10 @@ export default function About() {
       <section id="about-section" className="flex flex-col px-5">
         <div className="my-10 ">
           <h2 className="text-3xl xxs:text-5xl sm:text-6xl  text-center text-nowrap font-extralight text-shadow-lg/50">
-            {">"} ABOUT ME{" "}
+            {">"} ABOUT ME{""}
             <span
               id="banner_cursor"
-              className="blinker inline-block h-[10px] w-[30px] bg-dark box-shadow-lg/40"
+              className="blinker ml-5 inline-block h-[10px] w-[30px] bg-dark box-shadow-lg/40"
             ></span>
           </h2>
           <hr className="my-10 w-[60%] mx-auto" />
