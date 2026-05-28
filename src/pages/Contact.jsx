@@ -202,7 +202,7 @@ export default function Contact() {
         id="contactResponseModal"
         className={`modal fixed top-0 left-0 w-full h-full backdrop-blur-md pt-50 transition-opacity duration-300 ${
           modalOpen
-            ? "opacity-100 z-[999]"
+            ? "active opacity-100 z-[999]"
             : "opacity-0 z-[-1] pointer-events-none"
         }`}
       >
