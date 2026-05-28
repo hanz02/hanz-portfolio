@@ -79,7 +79,7 @@ export default function Header() {
           >
             <ul className="p-5 flex flex-col md:flex-row gap-5 font-[450] tracking-[2px] text-shadow-lg/15">
               <li>
-                <NavLink to="/" className="py-2">
+                <NavLink to="/" end className="py-2">
                   Home
                 </NavLink>
               </li>
