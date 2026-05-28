@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { timelineObjects } from "../data/timelineObjects";
 import "../css/About.css";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function About() {
   return (
     <>
@@ -21,7 +23,7 @@ export default function About() {
           <div className="relative w-fit">
             <img
               className="max-h-[500px] object-cover border-b-1 drop-shadow-lg/60"
-              src="/images/about-hz.png"
+              src={`${BASE_URL}images/hz.svg`}
               alt=""
             />
           </div>

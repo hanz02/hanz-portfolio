@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hanz-portfolio">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
