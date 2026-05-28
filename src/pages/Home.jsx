@@ -1,5 +1,7 @@
 import Tilt from "react-parallax-tilt";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function Home() {
   return (
     <>
@@ -24,7 +26,7 @@ export default function Home() {
         <div className="relative flex w-fit self-end">
           <img
             className="max-h-[500px] w-full mx-auto"
-            src="/images/hz.svg"
+            src={`${BASE_URL}images/hz.svg`}
             alt="Company Image"
           />
 
@@ -102,7 +104,7 @@ export default function Home() {
           <div className="bg-white z-1 py-15 w-full max-w-[450px] shadow-lg/10">
             <img
               className="h-[250px] w-full object-cover"
-              src="/images/photo1.svg"
+              src={`${BASE_URL}images/photo1.svg`}
               alt=""
             />
           </div>
@@ -113,7 +115,7 @@ export default function Home() {
             <h2 className=" max-w-[500px] w-[90%] h-fit text-xl lg:text-2xl font-light text-right sm:p-7 p-5 relative  my-10 sm:top-25 text-shadow-lg/20">
               "I photograph for remembrance, the future and the past. <br />{" "}
               <br /> A meseum full of
-              <span className="font-normal">memories</span>
+              <span className="font-normal"> memories</span>
               ."
               <span className="absolute top-0 right-0 w-full sm:w-[130%] h-full border-2 border-black "></span>
               <span className="absolute top-0 left-[100%] w-[10%] h-full bg-black"></span>
@@ -139,7 +141,11 @@ export default function Home() {
             href=""
             className="p-5 py-3 text-shadow-lg/10 flex items-center gap-2 drop-shadow-lg/10"
           >
-            <img className="w-[40px]" src="/images/github.png" alt="" />
+            <img
+              className="w-[40px]"
+              src={`${BASE_URL}images/github.png`}
+              alt=""
+            />
             <span>GITHUB</span>
           </a>
         </div>
@@ -193,14 +199,14 @@ export default function Home() {
           <img
             id="dark-moon"
             className="w-[30px] absolute right-1/2 left-1/2 translate-x-[-50%] top-[-15%]"
-            src="/images/moon.png"
+            src={`${BASE_URL}images/moon.png`}
             alt=""
           />
           <div></div>
           <div className="w-fit">
             <img
               className="h-[300px] drop-shadow-lg/50"
-              src="/images/silhouette.svg"
+              src={`${BASE_URL}images/silhouette.svg`}
               alt=""
             />
           </div>

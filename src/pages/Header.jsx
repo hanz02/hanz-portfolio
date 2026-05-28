@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
+
 import "../css/Header.css";
+const BASE_URL = import.meta.env.BASE_URL;
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -47,12 +50,12 @@ export default function Header() {
             <img
               id="cat-head"
               className="h-[100%] object-cover"
-              src="/images/logo-cat.png"
+              src={`${BASE_URL}images/logo-cat.png`}
               alt=""
             />
             <img
               id="star"
-              src="/images/dark-star.svg"
+              src={`${BASE_URL}images/dark-star.svg`}
               className="absolute top-[-10px] right-[-10px]  w-[16px] "
               alt=""
             />
@@ -72,24 +75,24 @@ export default function Header() {
           >
             <ul className="p-5 flex flex-col md:flex-row gap-5 font-[450] tracking-[2px] text-shadow-lg/15">
               <li>
-                <a href="/" className="py-2">
+                <NavLink href="/" className="py-2">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/photography" className="py-2">
+                <NavLink href="/photography" className="py-2">
                   Photography
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/about" className="py-2">
+                <NavLink href="/about" className="py-2">
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/contact" className="py-2">
+                <NavLink href="/contact" className="py-2">
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

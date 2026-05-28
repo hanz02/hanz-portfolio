@@ -56,6 +56,8 @@ const photos = [
   },
 ];
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function Photography() {
   return (
     <section className="py-20 pt-10">
@@ -76,7 +78,7 @@ export default function Photography() {
         <div className="h-full md:max-max-w-[500px] max-h-full md:h-full w-full ">
           <img
             className="h-full w-full object-cover"
-            src="/images/hz-pg.png"
+            src={`${BASE_URL}images/hz-pg.png`}
             alt=""
           />
         </div>
@@ -96,13 +98,13 @@ export default function Photography() {
             >
               <img
                 className="h-full w-full object-cover"
-                src={`/images/pg/${photo.image}`}
+                src={`${BASE_URL}images/pg/${photo.image}`}
                 alt={photo.name}
               />
 
               <div className="insta-layer absolute top-0 left-0 h-full w-full backdrop-blur-lg cursor-pointer flex flex-col gap-10 justify-center items-center">
                 <img
-                  src="/images/insta_logo.svg"
+                  src={`${BASE_URL}images/insta_logo.svg`}
                   className="h-[70px] drop-shadow-lg/50"
                   alt="Instagram logo"
                 />

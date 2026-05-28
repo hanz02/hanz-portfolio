@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "../css/Contact.css";
 
+const BASE_URL = import.meta.env.BASE_URL;
 export default function Contact() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -69,7 +70,7 @@ export default function Contact() {
           <div className="relative w-full">
             <img
               className="max-h-[400px] lg:max-h-[500px] h-full mx-auto lg:mx-0 lg:mr-auto drop-shadow-lg/50"
-              src="/images/hz_contact.png"
+              src={`${BASE_URL}images/hz_contact.png`}
               alt="Han Zhe contact"
             />
 
@@ -180,7 +181,7 @@ export default function Contact() {
               <a href="#" className="h-[20px] aspect-square">
                 <img
                   className="h-full w-full"
-                  src="/images/github_light.png"
+                  src={`${BASE_URL}images/github_light.png`}
                   alt="GitHub"
                 />
               </a>
@@ -188,7 +189,7 @@ export default function Contact() {
               <a href="#" className="h-[20px] aspect-square">
                 <img
                   className="h-full w-full"
-                  src="/images/insta_logo.svg"
+                  src={`${BASE_URL}images/insta_logo.svg`}
                   alt="Instagram"
                 />
               </a>
