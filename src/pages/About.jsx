@@ -13,7 +13,7 @@ export default function About() {
             {">"} ABOUT ME{" "}
             <span
               id="banner_cursor"
-              className="inline-block h-[10px] w-[30px] bg-dark box-shadow-lg/40"
+              className="blinker inline-block h-[10px] w-[30px] bg-dark box-shadow-lg/40"
             ></span>
           </h2>
           <hr className="my-10 w-[60%] mx-auto" />
