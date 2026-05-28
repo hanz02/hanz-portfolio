@@ -27,6 +27,8 @@ export default function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    console.log("herererererererererere", formData);
+
     if (!formData.fullName.trim()) {
       fullNameRef.current.focus();
       return;
