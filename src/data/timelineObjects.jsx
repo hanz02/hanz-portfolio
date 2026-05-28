@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 export const timelineObjects = [
   {
     id: "begin-of-the-end",
