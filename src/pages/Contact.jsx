@@ -27,8 +27,6 @@ export default function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    console.log("herererererererererere", formData);
-
     if (!formData.fullName.trim()) {
       fullNameRef.current.focus();
       return;
@@ -60,7 +58,7 @@ export default function Contact() {
               {">"} TO CONTACT
               <span
                 id="banner_cursor"
-                className="inline-block h-[10px] w-[30px] bg-dark shadow-lg/30"
+                className="blinker ml-5 inline-block h-[10px] w-[30px] bg-dark shadow-lg/30"
               ></span>
             </h1>
 
