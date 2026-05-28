@@ -64,7 +64,11 @@ export default function Header() {
               className="absolute top-[-5px] left-[-10px] w-[32px] opacity-0"
               id="light-cat"
             >
-              <img src="/images/light-cat.gif" className="" alt="" />
+              <img
+                src={`${BASE_URL}images/light-cat.gif`}
+                className=""
+                alt=""
+              />
             </span>
           </div>
           <div
@@ -108,7 +112,7 @@ export default function Header() {
               <span className="flex">
                 <img
                   className="w-[25px] object-contain"
-                  src="/images/dark-cat.gif"
+                  src={`${BASE_URL}images/dark-cat.gif`}
                   alt=""
                 />
                 <span className="flex flex-col gap-[5px] w-full pt-[2px]">
