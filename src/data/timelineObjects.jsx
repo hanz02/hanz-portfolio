@@ -60,8 +60,8 @@ export const timelineObjects = [
           className="py-3 text-shadow-lg/10 flex items-center gap-2 drop-shadow-lg/10 w-fit"
         >
           <img
-            className="w-[40px]"
-            src="/images/github.png"
+            className=" w-[40px]"
+            src={`${BASE_URL}images/github.png`}
             alt="GitHub logo"
           />
           <span>GITHUB</span>
