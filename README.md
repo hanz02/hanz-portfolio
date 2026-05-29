@@ -10,19 +10,19 @@ A personal portfolio website for Han Zhe, designed to present personal identity,
 
 ### Home Page
 
-![Home Page](docs/screenshots/home.png)
+![Home Page](docs/home.png)
 
 ### Photography Page
 
-![Photography Page](docs/screenshots/photography.png)
+![Photography Page](docs/photography.png)
 
 ### About Page
 
-![About Page](docs/screenshots/about.png)
+![About Page](docs/about.png)
 
 ### Contact Page
 
-![Contact Page](docs/screenshots/contact.png)
+![Contact Page](docs/contact.png)
 
 ---
 
@@ -93,8 +93,6 @@ hanz-portfolio
 │   ├── pages
 │   ├── App.jsx
 │   └── main.jsx
-├── docs
-│   └── screenshots
 ├── package.json
 ├── vite.config.js
 └── README.md
